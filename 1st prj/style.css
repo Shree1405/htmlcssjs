@@ -8,7 +8,60 @@
     width: 100%;
     height: 100vh;
     background-image: linear-gradient (to bottom , #f7d2c4, #f7d2c4);
-    background-size: 100% 300px ;
-    background-position: 0% 100% ;
-    animation: animate 10s  linear   forwards ;
+    position: relative;
+    padding :0 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    text-align: center;
+}
+.content h1{
+ font-size: 160px;
+ color: aliceblue;
+font-weight: 600;
+transition: 0.5s;
+}
+.content h1:hover{
+    -webkit-text-stroke: 2px white ;
+    color: transparent;
+
+}
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color: aquamarine;
+    font-size: 24px;
+    padding: 14px 50px;
+    margin-top: 20px;
+   transition: 0.5s;
+
+}
+.content a:hover{
+    background: white;
+    color: black;
+
+}
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media (min-aspect-ratio :16/9) {
+    .back-video{
+        width: 100%;
+        height: auto;
+
+    }
+    
+}
+@media (max-aspect-ratio :16/9) {
+    .back-video{
+        width: auto;
+        height: 100%;
+
+    }
+    
 }
