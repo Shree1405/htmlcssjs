@@ -17,7 +17,7 @@ body{
  .wrapper .loader{
      display:flex;
      justify-content : space-evenly;
-     padding: 0 20px;
+     padding: 0px 20px;
 
  }
  .loader .loading {
@@ -27,6 +27,7 @@ body{
     border-radius: 50px;
     margin : 0 10px;
     animation: load 0.8s ease infinite;
+    animation-fill-mode: forwards;
  }
  .loader .loading.one{
     animation-delay: 0.5s;
@@ -37,15 +38,17 @@ body{
  .loader .loading.three{
     animation-delay: 0.9s;
  }
- @keyframes load{
-    0%{
+ @keyframes load { 
+    0% {
         width:30px;
         height:30px;
     }
     50%{
         width : 20px;
-        height; 20px;
+        height: 20px;
     }
-}
+   }
+
+
  
  
